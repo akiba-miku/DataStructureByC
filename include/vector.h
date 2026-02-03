@@ -1,6 +1,6 @@
 #ifndef DS_VECTOR_H
 #define DS_VECTOR_H
-
+#include<stddef.h>
 typedef struct{
     void** data;
     size_t size;

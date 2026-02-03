@@ -15,6 +15,7 @@ include_directories(include)
 add_library(ds_core STATIC
     src/vector.c
     src/list.c
+    src/stack.c
 )
 
 # ==========================================
@@ -29,3 +30,6 @@ add_library(ds_core STATIC
 # 测试 2: List (新的链表测试)
 add_executable(test_list tests/test_list.c)
 target_link_libraries(test_list ds_core)
+
+add_executable(test_stack tests/test_stack.c)
+target_link_libraries(test_stack ds_core)
