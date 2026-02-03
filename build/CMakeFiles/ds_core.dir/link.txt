@@ -1,0 +1,2 @@
+C:\msys64\ucrt64\bin\ar.exe qc libds_core.a CMakeFiles/ds_core.dir/src/vector.c.obj CMakeFiles/ds_core.dir/src/list.c.obj CMakeFiles/ds_core.dir/src/stack.c.obj CMakeFiles/ds_core.dir/src/queue.c.obj CMakeFiles/ds_core.dir/src/hashmap.c.obj
+C:\msys64\ucrt64\bin\ranlib.exe libds_core.a
