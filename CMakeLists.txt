@@ -16,6 +16,7 @@ add_library(ds_core STATIC
     src/vector.c
     src/list.c
     src/stack.c
+    src/queue.c
 )
 
 # ==========================================
@@ -33,3 +34,6 @@ target_link_libraries(test_list ds_core)
 
 add_executable(test_stack tests/test_stack.c)
 target_link_libraries(test_stack ds_core)
+
+add_executable(test_queue tests/test_queue.c)
+target_link_libraries(test_queue ds_core)
