@@ -76,8 +76,11 @@ void ds_vector_set(ds_vector *v, size_t index, void *item){
 
 //destroy all items if they are in heap 
 void ds_vector_free(ds_vector *v){
-    for(size_t i=0;i<v->size;i++){
-        free(v->data[i]);
+    if(v != NULL){
+        free(v->data);
+        v->data = NULL;
     }
+    v->size=0;
+    v->capacity=0;
 }
 
