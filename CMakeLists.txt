@@ -18,6 +18,7 @@ add_library(ds_core STATIC
     src/stack.c
     src/queue.c
     src/hashmap.c
+    src/string_buffer.c
 )
 
 # ==========================================
@@ -41,3 +42,6 @@ target_link_libraries(test_queue ds_core)
 
 add_executable(test_hashmap tests/test_hashmap.c)
 target_link_libraries(test_hashmap ds_core)
+
+add_executable(test_string_buffer tests/test_string_buffer.c)
+target_link_libraries(test_string_buffer ds_core)
